@@ -1,2 +1,10 @@
 streamlit
-PILLOW
+pillow
+pandas
+numpy
+matplotlib
+nltk
+wordcloud
+spacy
+sklearn
+opencv-python
