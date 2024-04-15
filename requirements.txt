@@ -6,5 +6,5 @@ matplotlib
 nltk
 wordcloud
 spacy
-sklearn
+scikit-learn
 opencv-python
