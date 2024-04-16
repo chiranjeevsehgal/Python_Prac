@@ -24,8 +24,13 @@ def visualizaionfunc():
         data=pd.read_csv('WomensClothingE_CommerceReviews.csv')
         st.dataframe(data)
 
+        st.subheader('Data Insights')
+        product_preferences = data.groupby('Department Name')['Positive Feedback Count'].sum().reset_index()
+        bar_fig = px.bar(product_preferences, x='Department Name', y='Positive Feedback Count', title='Distribution by Department')
+        st.plotly_chart(bar_fig)
+
         
-        # 3D scatter plot
+        st.subheader('3D Plot between Age, Rating and Positive Feedback Counts')
         fig = go.Figure(data=[go.Scatter3d(
             x=data['Age'],
             y=data['Rating'],
