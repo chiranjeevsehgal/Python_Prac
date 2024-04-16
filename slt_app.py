@@ -11,10 +11,7 @@ from nltk.stem import PorterStemmer
 from wordcloud import STOPWORDS
 
 def display_home():
-    st.header("EXAM!")
-    # st.write("""
-    # Exam
-    # """)
+    st.header("Chiranjeev Sehgal - 2347113")
 
 def visualizaionfunc():
     if option == "3D Plot Visualization":
@@ -118,7 +115,7 @@ def imageprocessingfunc():
 
 
             image_rotate = cv.cvtColor(rotate, cv.COLOR_BGR2RGB)
-            st.image(image_rotate, caption='Cropped Image')
+            st.image(image_rotate, caption='Rotated Image')
             
 
 def txtanalysisfunc():
