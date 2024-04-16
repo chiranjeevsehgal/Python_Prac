@@ -8,3 +8,4 @@ wordcloud
 spacy
 scikit-learn
 opencv-python
+plotly
